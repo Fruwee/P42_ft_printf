@@ -6,14 +6,14 @@
 /*   By: petrbenes <petrbenes@student.42.fr>        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/06/17 16:03:35 by petrbenes         #+#    #+#             */
-/*   Updated: 2024/06/20 13:53:32 by petrbenes        ###   ########.fr       */
+/*   Updated: 2024/06/25 15:01:58 by petrbenes        ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "ft_printf.h"
 
-int ft_putchar(char c)
+int ft_putchar(int c)
 {
 	write(1, &c, 1);
-	return (0);
+	return (1);
 }

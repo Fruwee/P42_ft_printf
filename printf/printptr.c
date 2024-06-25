@@ -6,7 +6,7 @@
 /*   By: petrbenes <petrbenes@student.42.fr>        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/04/18 10:41:20 by petrbenes         #+#    #+#             */
-/*   Updated: 2024/06/20 12:46:35 by petrbenes        ###   ########.fr       */
+/*   Updated: 2024/06/25 14:47:07 by petrbenes        ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -41,7 +41,7 @@ void ft_putptr(uintptr_t num)
 	}
 }
 
-int ft_printptr(unsigned long long ptr)
+int printptr(unsigned long long ptr)
 {
 
 	int print_lenght;

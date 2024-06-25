@@ -1,26 +1,36 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   printchar.c                                        :+:      :+:    :+:   */
+/*   suportfunc.c                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: petrbenes <petrbenes@student.42.fr>        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2024/04/03 23:34:18 by petrbenes         #+#    #+#             */
-/*   Updated: 2024/06/25 14:41:41 by petrbenes        ###   ########.fr       */
+/*   Created: 2024/06/25 14:49:28 by petrbenes         #+#    #+#             */
+/*   Updated: 2024/06/25 14:50:03 by petrbenes        ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "ft_printf.h"
-
-char ft_printchar(char *ch)
+int hex_len(int i)
 {
-	int c;
-	c = 0;
+	int len;
 
-	while (ch[c + 1] != '\0')
+	len = 0;
+	while (i != 0)
 	{
-		c++;
+		len++;
+		i = i / 16;
 	}
-	write(1, &ch[c], 1);
-	return (0);
+	return (len - 1);
+}
+
+int n_len(int i)
+{
+	int l;
+
+	l = 1;
+	while ((i % 10) != 0)
+	{
+		l++;
+	}
+	return (l);
 }

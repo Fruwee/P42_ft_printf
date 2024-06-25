@@ -6,7 +6,7 @@
 /*   By: petrbenes <petrbenes@student.42.fr>        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/03/29 12:42:20 by petrbenes         #+#    #+#             */
-/*   Updated: 2024/06/25 09:28:05 by petrbenes        ###   ########.fr       */
+/*   Updated: 2024/06/25 14:41:27 by petrbenes        ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -55,7 +55,7 @@ int ft_printf(const char *str, ...)
 			i++;
 		}
 		else
-			print_length += ft_printchar(str[i]);
+			print_length += ft_putchar(str[i]);
 		i++;
 	}
 	va_end(args);

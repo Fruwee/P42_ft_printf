@@ -6,7 +6,7 @@
 #    By: petrbenes <petrbenes@student.42.fr>        +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2024/06/17 13:39:59 by petrbenes         #+#    #+#              #
-#    Updated: 2024/06/20 12:47:55 by petrbenes        ###   ########.fr        #
+#    Updated: 2024/06/25 14:50:42 by petrbenes        ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -15,12 +15,13 @@ CFLAGS = -Wall -Wextra -Werror -c
 
 SOURCES = \
 	ft_printf.c printchar.c printdigit.c printhexl.c printhexu.c printpercent.c \
-	printptr.c printstring.c printunsd.c ft_putchar_fd.c ft_putchar.c
+	printptr.c printstring.c printunsd.c ft_putchar_fd.c ft_putchar.c \
+	suportfunc.c
 
 
 OBJECTS = ${SOURCES:.c=.o}
 
-NAME = ft_printf.a
+NAME = libftprintf.a
 
 
 all: ${NAME}

@@ -6,38 +6,13 @@
 /*   By: petrbenes <petrbenes@student.42.fr>        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/04/17 13:35:44 by petrbenes         #+#    #+#             */
-/*   Updated: 2024/06/20 14:56:48 by petrbenes        ###   ########.fr       */
+/*   Updated: 2024/06/25 14:53:14 by petrbenes        ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "ft_printf.h"
 
-int hex_len(int i)
-{
-	int len;
-
-	len = 0;
-	while (i != 0)
-	{
-		len++;
-		i = i / 16;
-	}
-	return (len - 1);
-}
-
-int n_len(int i)
-{
-	int l;
-
-	l = 1;
-	while ((i % 10) != 0)
-	{
-		l++;
-	}
-	return (l);
-}
-
-char *ft_conversion(int i)
+char *ft_conversionl(int i)
 {
 	int c; // counter
 	int h; // holding value
@@ -64,12 +39,12 @@ char *ft_conversion(int i)
 	return (str);
 	free(str);
 }
-int printhexu(int i)
+int printhexl(int i)
 {
 	int c2;
 	char *str;
 
-	str = ft_conversion(i);
+	str = ft_conversionl(i);
 	c2 = hex_len(i);
 
 	if (i == 0)
